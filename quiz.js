@@ -8,6 +8,7 @@ Quiz.prototype.guess = function(answer) {
   if(this.getCurrentQuestion().isCorrectAnswer(answer)) {
     this.score++;
   }
+  this.currentQuestionIndex++;
 };
 
 Quiz.prototype.getCurrentQuestion = function() {
